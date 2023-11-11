@@ -155,6 +155,10 @@ svg * {
     margin: auto;
 }
 
+.underline-span {
+    text-decoration: underline;
+}
+
 .sun {
     animation-duration: 4s;
     animation-name: color-change;
