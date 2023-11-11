@@ -15,6 +15,18 @@
     box-sizing: border-box;
 } 
 
+.house-icon {
+    height: 20px;
+    background-color: red;
+}
+
+.house-fill {
+    fill: grey;
+}
+.house-icon:hover {
+    background-color: purple;
+}
+
 table {
     margin: 15px;;
 }
@@ -24,18 +36,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
+a,
 a:visited {
-    color: var(--link-visited);
+    color: #3D3D3D;
+    text-decoration: none;
 }
 
 a:hover, a:focus {
     transition-duration: 0.3s;
-    background-color: var(--link-hover);
+    background-color: #3D3D3D;
     color: var(--white);
 }
 
@@ -158,6 +167,29 @@ svg * {
     margin: auto;
 }
 
+.home-icon {
+    height: 500px;
+    width: auto;
+    background-color: #2b2b2b;
+    padding: 10px;
+}
+
+.home-icon:hover,
+.fill-1:hover,
+.fill-2:hover,
+.fill-3:hover,
+.fill-4:hover {
+    fill: purple;
+}
+
+.fill-5 {
+    fill: green;
+}
+
+.fill-6 {
+    fill: green;
+}
+
 .sun {
     animation-duration: 4s;
     animation-name: color-change;
@@ -180,8 +212,8 @@ svg * {
 
 .nav-button {
     border: none;
-    background-color: var(--white);
-    color: var(--link-visited);
+    background-color: #B4ADA7;
+    color: #222222;
     text-decoration: none;
     font-size: 16px;
     border: none;
