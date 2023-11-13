@@ -192,6 +192,10 @@ svg * {
     transition: opacity 2s;
 }
 
+.social-media:hover {
+    background-color: none;
+}
+
 @keyframes color-change {
     0% {
         fill: #edc655;;

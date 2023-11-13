@@ -15,24 +15,21 @@ table {
 }
 
 body {
-    background-color: #fff;
+    background-color: #F6F5F4;
     font-family: 'Roboto', sans-serif;
 }
 
-a {
-    color: #357b70;
-    text-decoration: none;
-}
-
+a,
 a:visited {
-    color: #05676e;
+    color: #3D3D3D;
+    text-decoration: none;
 }
 
 a:hover {
     -webkit-transition-duration: 0.3s;
          -o-transition-duration: 0.3s;
             transition-duration: 0.3s;
-    background-color: rgb(23, 23, 101);
+    background-color: #3D3D3D;
     color: #fff;
 }
 
@@ -40,7 +37,7 @@ a:focus {
     -webkit-transition-duration: 0.3s;
          -o-transition-duration: 0.3s;
             transition-duration: 0.3s;
-    background-color: rgb(23, 23, 101);
+    background-color: #3D3D3D;
     color: #fff;
 }
 
@@ -200,6 +197,10 @@ svg * {
     margin: auto;
 }
 
+.underline-span {
+    text-decoration: underline;
+}
+
 .sun {
     -webkit-animation-duration: 4s;
             animation-duration: 4s;
@@ -233,8 +234,8 @@ svg * {
 
 .nav-button {
     border: none;
-    background-color: #fff;
-    color: #05676e;
+    background-color: #B4ADA7;
+    color: #222222;
     text-decoration: none;
     font-size: 16px;
     border: none;
@@ -244,6 +245,10 @@ svg * {
     -webkit-transition: opacity 2s;
     -o-transition: opacity 2s;
     transition: opacity 2s;
+}
+
+.social-media:hover {
+    background-color: none;
 }
 
 @-webkit-keyframes color-change {
