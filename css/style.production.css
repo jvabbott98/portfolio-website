@@ -1,3 +1,16 @@
+:root {
+    --primary-color: #357b70;
+    --secondary-color: #e0b354;
+    --dark-grey: #2b2b2b;
+    --link-visited: #05676e;
+    --link-hover: rgb(23, 23, 101);
+    --link-active: #489c79;
+    --border: rgba(0, 0, 0, 0.3);
+    --grid-item:  lightgrey;
+    --grid-item-hover: #3498db;
+    --white: #fff;
+}
+
 * {
     box-sizing: border-box;
 } 
@@ -21,47 +34,28 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
     transition-duration: 0.3s;
     background-color: #3D3D3D;
-    color: #fff;
-}
-
-a:focus {
-    transition-duration: 0.3s;
-    background-color: #3D3D3D;
-    color: #fff;
+    color: var(--white);
 }
 
 a:active {
-    color: #489c79;
+    color: var(--link-active);
 }
 
-button {
-    border: none;
-    background-color: #357b70;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    border: none;
-    font-family: inherit;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition: opacity 0.2s;
-}
-
+button,
 .button {
     border: none;
-    background-color: #357b70;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--white);
     text-decoration: none;
     font-size: 16px;
     border: none;
     font-family: inherit;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid var(--border);
     transition: opacity 0.2s;
 }
 
@@ -74,8 +68,8 @@ button:focus,
 }
 
 .button_secondary {
-    background-color: #e0b354;
-    color: #2b2b2b;
+    background-color: var(--secondary-color);
+    color: var(--dark-grey);
 }
 
 .navigation-list__item--active {
@@ -133,14 +127,14 @@ button:focus,
 }
 
 .grid__item {
-    background-color: lightgrey;
+    background-color: var(--grid-item);
     transition: all 0.3s;
     padding: 0 15px 15px 15px;
 }
 
 .grid__item:hover {
     transform: scale(1.05);
-    background-color: #3498db;
+    background-color: var(--grid-item-hover);
 }
 
 .grid__item:last-child {
@@ -260,3 +254,4 @@ svg * {
         grid-template-columns: 1fr 1fr;
     }
 }
+
